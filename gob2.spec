@@ -20,7 +20,7 @@ so that you don't have to edit the generated files. Syntax is somewhat
 inspired by Java and yacc. It supports generating C++ code.
 
 %description -l pl
-GOB jest prostym preprocesorem s³u¿±cym do tworzenia obiektór GObject
+GOB jest prostym preprocesorem s³u¿±cym do tworzenia obiektów GObject
 (obiektów glib). Tworzy obiekty z pojedynczego pliku zawieraj±cego
 wbudowany kod C, dziêki czemu nie trzeba modyfikowaæ wygenerowanych
 plików. Sk³adnia jest do pewnego stopnia inspirowana Jav± i yaccem.
