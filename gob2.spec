@@ -7,7 +7,6 @@ License:	GPL
 Group:		Development/Tools
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/2.0/%{name}-%{version}.tar.bz2
 # Source0-md5:	53e6fcf35a8a5548196677b06d5cdd3a
-# Source0-size:	194020
 URL:		http://www.5z.com/jirka/gob.html
 BuildRequires:	automake
 BuildRequires:	flex
