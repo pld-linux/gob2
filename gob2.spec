@@ -39,9 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-# isn't COPYING just GPL?
-%doc README AUTHORS COPYING NEWS TODO ChangeLog
-%doc examples
+%doc README AUTHORS NEWS TODO ChangeLog examples
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man?/*
 %{_aclocaldir}/*
