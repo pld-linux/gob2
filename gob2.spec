@@ -1,15 +1,15 @@
 Summary:	GOB2, The GObject Builder
 Summary(pl):	GOB2 - budowniczy obiektów GObject
 Name:		gob2
-Version:	2.0.6
-Release:	3
+Version:	2.0.7
+Release:	1
 License:	GPL
 Group:		Development/Tools
-Source0:	http://ftp.5z.com/pub/gob/%{name}-%{version}.tar.bz2
-# Source0-md5:	ada2db09f3740858376429b5c7e98ada
-Patch0:		%{name}-am18.patch
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/2.0/%{name}-%{version}.tar.bz2
+# Source0-md5:	9e2327506c41f9c6cff01e6930e6dedc
 URL:		http://www.5z.com/jirka/gob.html
 BuildRequires:	automake
+BuildRequires:	glib2-devel
 BuildRequires:	flex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,11 +28,9 @@ Obs³uguje generowanie kodu C++.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %configure
-
 %{__make}
 
 %install
