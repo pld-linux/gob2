@@ -2,7 +2,7 @@ Summary:	GOB2, The GObject Builder
 Summary(pl):	GOB2, Budowniczy obiektów GObject
 Name:		gob2
 Version:	2.0.6
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Tools
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.0/%{name}-%{version}.tar.bz2
@@ -34,13 +34,19 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+	
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -r examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+
+
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README AUTHORS NEWS TODO ChangeLog examples
+%doc README AUTHORS NEWS TODO ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man?/*
 %{_aclocaldir}/*
+%{_examplesdir}/%{name}-%{version}
