@@ -5,9 +5,9 @@ Version:	2.0.6
 Release:	2
 License:	GPL
 Group:		Development/Tools
-Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.0/%{name}-%{version}.tar.bz2
+Source0:	http://ftp.5z.com/pub/gob/%{name}-%{version}.tar.bz2
 # Source0-md5:	ada2db09f3740858376429b5c7e98ada
-URL:		http://www.5z.com/jirka/linux.html#gob
+URL:		http://www.5z.com/jirka/gob.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
