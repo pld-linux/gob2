@@ -8,6 +8,7 @@ Group:		Development/Tools
 Source0:	http://ftp.5z.com/pub/gob/%{name}-%{version}.tar.bz2
 # Source0-md5:	ada2db09f3740858376429b5c7e98ada
 URL:		http://www.5z.com/jirka/gob.html
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,8 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 	
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 cp -r examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
