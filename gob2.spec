@@ -10,6 +10,7 @@ Source0:	http://ftp.5z.com/pub/gob/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-am18.patch
 URL:		http://www.5z.com/jirka/gob.html
 BuildRequires:	automake
+BuildRequires:	flex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
