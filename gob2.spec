@@ -1,7 +1,7 @@
 Summary:	GOB2, The GObject Builder
 Summary(pl):	GOB2, Budowniczy obiektów GObject
 Name:		gob2
-Version:	2.0.5
+Version:	2.0.6
 Release:	1
 License:	GPL
 Group:		Development/Tools
