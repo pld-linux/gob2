@@ -1,5 +1,5 @@
-
 Summary:	GOB2, The GObject Builder
+Summary(pl):	GOB2, Budowniczy obiektów GObject
 Name:		gob2
 Version:	2.0.4
 Release:	1
@@ -13,7 +13,14 @@ BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 GOB is a simple preprocessor for making GObject objects (glib
 objects). It makes objects from a single file which has inline C code
 so that you don't have to edit the generated files. Syntax is somewhat
-inspired by java and yacc. It supports generating C++ code
+inspired by Java and yacc. It supports generating C++ code.
+
+%description -l pl
+GOB jest prostym preprocesorem s³u¿±cym do tworzenia obiektór GObject
+(obiektów glib). Tworzy obiekty z pojedynczego pliku zawieraj±cego
+wbudowany kod C, dziêki czemu nie trzeba modyfikowaæ wygenerowanych
+plików. Sk³adnia jest do pewnego stopnia inspirowana Jav± i yaccem.
+Obs³uguje generowanie kodu C++.
 
 %prep
 %setup -q
@@ -32,8 +39,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+# isn't COPYING just GPL?
 %doc README AUTHORS COPYING NEWS TODO ChangeLog
 %doc examples
 %attr(755,root,root) %{_bindir}/*
-%{_mandir}/*
+%{_mandir}/man?/*
 %{_aclocaldir}/*
