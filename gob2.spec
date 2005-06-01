@@ -11,6 +11,7 @@ URL:		http://www.5z.com/jirka/gob.html
 BuildRequires:	automake
 BuildRequires:	flex
 BuildRequires:	glib2-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
