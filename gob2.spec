@@ -5,12 +5,11 @@ Version:	2.0.13
 Release:	1
 License:	GPL
 Group:		Development/Tools
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/2.0/%{name}-%{version}.tar.bz2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gob2/2.0/%{name}-%{version}.tar.bz2
 # Source0-md5:	16f26015c8789fbcd723e4117ec5b1b1
 URL:		http://www.5z.com/jirka/gob.html
-BuildRequires:	automake
 BuildRequires:	flex
-BuildRequires:	glib2-devel
+BuildRequires:	glib2-devel >= 2.0.0
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
