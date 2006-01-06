@@ -1,12 +1,12 @@
 Summary:	GOB2, The GObject Builder
 Summary(pl):	GOB2 - budowniczy obiektów GObject
 Name:		gob2
-Version:	2.0.13
+Version:	2.0.14
 Release:	1
 License:	GPL
 Group:		Development/Tools
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gob2/2.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	16f26015c8789fbcd723e4117ec5b1b1
+# Source0-md5:	be788fa5cf70483255e2099188a9dc33
 URL:		http://www.5z.com/jirka/gob.html
 BuildRequires:	flex
 BuildRequires:	glib2-devel >= 2.0.0
