@@ -1,5 +1,5 @@
 Summary:	GOB2, The GObject Builder
-Summary(pl.UTF-8):   GOB2 - budowniczy obiektów GObject
+Summary(pl.UTF-8):	GOB2 - budowniczy obiektów GObject
 Name:		gob2
 Version:	2.0.14
 Release:	2
