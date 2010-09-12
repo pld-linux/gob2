@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	GOB2 - budowniczy obiektów GObject
 Name:		gob2
 Version:	2.0.17
 Release:	1
-License:	GPL v2
+License:	GPL v2+
 Group:		Development/Tools
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gob2/2.0/%{name}-%{version}.tar.bz2
 # Source0-md5:	5428ba105e476c20a0836d773c7b3c6e
@@ -47,8 +47,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README AUTHORS NEWS TODO ChangeLog
-%attr(755,root,root) %{_bindir}/*
-%{_mandir}/man?/*
-%{_aclocaldir}/*
+%doc AUTHORS COPYING.generated-code ChangeLog NEWS README TODO
+%attr(755,root,root) %{_bindir}/gob2
+%{_mandir}/man1/gob2.1*
+%{_aclocaldir}/gob2.m4
 %{_examplesdir}/%{name}-%{version}
